@@ -1,0 +1,51 @@
+.LoadingIndicator {
+  text-align: center;
+  color: grey;
+  user-select: none;
+}
+
+
+.LoadingIndicator .loading-dots::before {
+  content: '.';
+  animation: dot1 0.6s ease-in-out infinite;
+}
+
+.LoadingIndicator .loading-dots>span {
+  animation: dot2 0.6s ease-in-out infinite;
+}
+
+.LoadingIndicator .loading-dots::after {
+  content: '.';
+  animation: dot3 0.6s ease-in-out infinite;
+}
+
+@keyframes dot1 {
+  0% { opacity: 0 }
+  25% { opacity: 1 }
+  50% { opacity: 1 }
+  75% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+@keyframes dot2 {
+  0% { opacity: 0 }
+  25% { opacity: 0 }
+  50% { opacity: 1 }
+  75% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+@keyframes dot3 {
+  0% { opacity: 0 }
+  25% { opacity: 0 }
+  50% { opacity: 0 }
+  75% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+.LoadingIndicator .error {
+  color: #632424;
+  padding: 10px;
+  text-align: center;
+  user-select: none;
+}

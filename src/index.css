@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'SF UI Display', sans-serif;
+  color: white;
+  background-color: #111;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 500;
+  src: local('SF UI Display'), url('/sf-ui-display-medium.woff') format('woff');
+}

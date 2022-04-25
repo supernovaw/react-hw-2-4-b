@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.FetchTest {
+  width: 150px;
+  height: 120px;
+  user-select: none;
+  background-color: #0a0a0a;
+  color: lightgrey;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px #00000080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  outline: 0px solid transparent;
+  transition: box-shadow 1s, transform 0.15s, outline 0.1s ease-out;
+}
+
+.FetchTest:active {
+  transform: scale(0.98) translateY(2px);
+}
+
+.FetchTest:hover {
+  outline: 1px solid #5e5e5e65;
+}
+
+.FetchTest.error {
+  box-shadow: 0 4px 10px #832b2b80;
+}
+
+.FetchTest.success {
+  box-shadow: 0 4px 10px #2e832b80;
+}
